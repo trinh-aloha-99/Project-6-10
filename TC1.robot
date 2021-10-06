@@ -33,6 +33,7 @@ LoginTestcase
         choose file         //input[@type='file']        D:/document.txt
 
         input text           //input[@id='react-select-3-input']                NCR
+        # gửi phím enter
         press key            //input[@id='react-select-3-input']              \\13
 
 
