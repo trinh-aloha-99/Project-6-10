@@ -7,6 +7,7 @@ Library     SeleniumLibrary
 *** Test Cases ***
 LoginTestcase
         set selenium speed      0.5
+        # open my browser
         open browser      https://demoqa.com/       chrome
         maximize browser window
 
