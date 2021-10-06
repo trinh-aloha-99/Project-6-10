@@ -7,6 +7,7 @@ Library     SeleniumLibrary
 *** Test Cases ***
 LoginTestcase
         set selenium speed      0.5
+        # open my browser
         open browser      https://demoqa.com/       chrome
         maximize browser window
 
@@ -32,6 +33,7 @@ LoginTestcase
         choose file         //input[@type='file']        D:/document.txt
 
         input text           //input[@id='react-select-3-input']                NCR
+        # gửi phím enter
         press key            //input[@id='react-select-3-input']              \\13
 
 
