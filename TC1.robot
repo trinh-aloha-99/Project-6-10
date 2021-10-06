@@ -25,7 +25,7 @@ LoginTestcase
 
 
 
-
+        #scroll by px
        execute javascript      window.scrollTo(0,600)
        click element       //label[@for='hobbies-checkbox-3']
 
