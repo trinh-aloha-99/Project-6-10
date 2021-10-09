@@ -35,7 +35,7 @@ LoginTestcase
         #verify nội dung element
         element text should be      //span[@id='promptResult']          You entered your name
 
-
+        Pass execution      Log to Console      Test
 
 
 
