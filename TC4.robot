@@ -6,6 +6,7 @@ Library    OperatingSystem
 Testcase03
     Set Selenium Speed    0.5
     # mở browser 1
+    # demo change 
     Open Browser    https://demoqa.com/alerts      chrome
     Maximize Browser Window
 
