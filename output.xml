@@ -1,73 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20211012 23:09:03.054" rpa="false" schemaversion="2">
-<suite id="s1" name="TC5" source="C:\Users\TGS\Documents\Project-6-10\TC5.robot">
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20211012 23:32:10.494" rpa="false" schemaversion="2">
+<suite id="s1" name="BuiltIIn" source="C:\Users\TGS\Documents\Project-6-10\BuiltIIn.robot">
 <test id="s1-t1" name="Test title">
-<kw name="NoiTenTheo &quot;separator&quot;" sourcename="NoiTenTheo &quot;${key}&quot;">
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>'${key}'==''</arg>
-<arg>Catenate1</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211012 23:09:03.320" endtime="20211012 23:09:03.320"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>'${key}'=='separator'</arg>
-<arg>Catenate2</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<kw name="Catenate2">
-<kw name="Catenate" library="BuiltIn">
-<var>${name1}</var>
-<arg>SEPARATOR=</arg>
-<arg>Trinh</arg>
-<arg>ta</arg>
-<doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20211012 23:09:03.320" level="INFO">${name1} = Trinhta</msg>
-<status status="PASS" starttime="20211012 23:09:03.320" endtime="20211012 23:09:03.320"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>message</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211012 23:32:10.845" endtime="20211012 23:32:10.845"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${name1}</arg>
+<arg>end</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211012 23:09:03.320" endtime="20211012 23:09:03.320"/>
+<status status="PASS" starttime="20211012 23:32:10.846" endtime="20211012 23:32:10.846"/>
 </kw>
-<status status="PASS" starttime="20211012 23:09:03.320" endtime="20211012 23:09:03.320"/>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>&amp;{dic}</var>
+<arg>abc=1</arg>
+<arg>cde=2</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20211012 23:32:10.847" level="INFO">&amp;{dic} = { abc=1 | cde=2 }</msg>
+<status status="PASS" starttime="20211012 23:32:10.847" endtime="20211012 23:32:10.847"/>
 </kw>
-<status status="PASS" starttime="20211012 23:09:03.320" endtime="20211012 23:09:03.320"/>
+<kw name="Log Many" library="BuiltIn">
+<arg>${dic.cde}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20211012 23:32:10.848" level="INFO">2</msg>
+<status status="PASS" starttime="20211012 23:32:10.848" endtime="20211012 23:32:10.848"/>
 </kw>
-<status status="PASS" starttime="20211012 23:09:03.320" endtime="20211012 23:09:03.320"/>
-</kw>
-<kw name="NoiTenTheo &quot;&quot;" sourcename="NoiTenTheo &quot;${key}&quot;">
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>'${key}'==''</arg>
-<arg>Catenate1</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<kw name="Catenate1">
-<kw name="Catenate" library="BuiltIn">
-<var>${name}</var>
-<arg>Trinh</arg>
-<arg>Ta</arg>
-<doc>Catenates the given items together and returns the resulted string.</doc>
-<msg timestamp="20211012 23:09:03.320" level="INFO">${name} = Trinh Ta</msg>
-<status status="PASS" starttime="20211012 23:09:03.320" endtime="20211012 23:09:03.320"/>
+<kw name="Create List" library="BuiltIn">
+<var>@{list}</var>
+<arg>hoc</arg>
+<arg>sinh</arg>
+<arg>lop</arg>
+<arg>2</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20211012 23:32:10.849" level="INFO">@{list} = [ hoc | sinh | lop | 2 ]</msg>
+<status status="PASS" starttime="20211012 23:32:10.849" endtime="20211012 23:32:10.849"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>${name}</arg>
+<arg>${list}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211012 23:09:03.320" endtime="20211012 23:09:03.320"/>
+<status status="PASS" starttime="20211012 23:32:10.849" endtime="20211012 23:32:10.850"/>
 </kw>
-<status status="PASS" starttime="20211012 23:09:03.320" endtime="20211012 23:09:03.320"/>
-</kw>
-<status status="PASS" starttime="20211012 23:09:03.320" endtime="20211012 23:09:03.320"/>
-</kw>
-<kw name="Run Keyword If" library="BuiltIn">
-<arg>'${key}'=='separator'</arg>
-<arg>Catenate2</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" starttime="20211012 23:09:03.320" endtime="20211012 23:09:03.320"/>
-</kw>
-<status status="PASS" starttime="20211012 23:09:03.320" endtime="20211012 23:09:03.320"/>
-</kw>
-<status status="PASS" starttime="20211012 23:09:03.320" endtime="20211012 23:09:03.320"/>
+<status status="PASS" starttime="20211012 23:32:10.844" endtime="20211012 23:32:10.851"/>
 </test>
-<status status="PASS" starttime="20211012 23:09:03.054" endtime="20211012 23:09:03.320"/>
+<status status="PASS" starttime="20211012 23:32:10.496" endtime="20211012 23:32:10.852"/>
 </suite>
 <statistics>
 <total>
@@ -76,7 +52,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC5">TC5</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="BuiltIIn">BuiltIIn</stat>
 </suite>
 </statistics>
 <errors>
