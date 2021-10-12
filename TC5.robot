@@ -4,10 +4,28 @@ Library     SeleniumLibrary
 *** Test Cases ***
 Test title
     #demo change on server
-    open browser            https://demoqa.com/       chrome
-    maximize browser window
-    Execute javascript      window.scrollTo(0, document.body.scrollHeight)
-    execute javascript      window.getTitle(
+    #open browser            https://demoqa.com/       chrome
+    #maximize browser window
+    #Execute javascript      window.scrollTo(0, document.body.scrollHeight)
+
+    NoiTenTheo "separator"
+    NoiTenTheo ""
+    
 *** Keywords ***
-Provided precondition
-    Setup system under test
+Catenate1
+    # ham noi Catenate
+    ${name}=    catenate    Trinh   Ta
+    Log to Console      ${name}
+Catenate2
+    ${name1}=       Catenate        SEPARATOR=      Trinh     ta
+    Log To Console      ${name1}
+
+NoiTenTheo "${key}"
+    run keyword if  '${key}'==''    Catenate1
+    run keyword if  '${key}'=='separator'   Catenate2
+
+
+
+
+
+
