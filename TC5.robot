@@ -11,6 +11,7 @@ Test title
     NoiTenTheo "separator"
     NoiTenTheo ""
     
+
 *** Keywords ***
 Catenate1
     # ham noi Catenate
@@ -23,6 +24,10 @@ Catenate2
 NoiTenTheo "${key}"
     run keyword if  '${key}'==''    Catenate1
     run keyword if  '${key}'=='separator'   Catenate2
+
+Input "${text}" Element Text "${element}"
+    input text      ${element}      ${text}
+
 
 
 
